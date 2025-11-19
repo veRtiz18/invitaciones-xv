@@ -803,6 +803,13 @@ body {
     font-weight: lighter;
 }
 
+.ubication_direction {
+    font-family: 'GreatVibes', cursive;
+    font-size: 2.5rem;
+    color: #c18a00;
+    font-weight: lighter;
+}
+
 .ubication__salon span {
     font-size: 3.5rem;
     color: #3e0a03;
@@ -961,9 +968,9 @@ body {
 
 
 @media (max-width: 768px) {
-.dress_code-img {
-    right: 7%;
-}
+    .dress_code-img {
+        right: 7%;
+    }
 
     .wrapper {
         margin: 0 auto;
