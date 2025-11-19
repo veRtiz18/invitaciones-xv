@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario con corazón</title>
+    <style>
+        /* ======== BASE ======== */
+        body {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* ======== BLOQUE: calendario ======== */
+        .calendar {
+            background: linear-gradient(135deg,
+                    #722f37,
+                    #8b3a3f,
+                    #c9a44f,
+                    #926e05,
+                    #722f37);
+            background-size: 400% 400%;
+            animation: shine 8s ease-in-out infinite;
+            color: #fff;
+            border-radius: var(--radius);
+            box-shadow: 0 4px 15px rgba(114, 47, 55, 0.25);
+            padding: 20px 30px;
+            text-align: center;
+        }
+
+        /* animación suave */
+        @keyframes shine {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+
+        .calendar__month {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--color-header-text);
+            background-color: var(--color-header-bg);
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .calendar__table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .calendar__day-name {
+            color: #ffffff;
+            padding-bottom: 10px;
+        }
+
+        .calendar__day {
+            padding: 8px;
+            text-align: center;
+            font-weight: 500;
+            color: var(--color-text);
+            position: relative;
+        }
+
+        /* Día activo con corazón: texto blanco y fondo vino */
+        .calendar__day--heart.calendar__day--active {
+            background-color: var(--color-heart);
+            color: #fff;
+            /* texto blancopadding: 10px; */
+            border-radius: 100%;
+        }
+
+        /* ======== MODIFICADOR: día con corazón ======== */
+        .calendar__day--heart {
+            position: absolute;
+        }
+
+        .calendar__day--heart::before {
+            content: "♥";
+            color: white;
+            font-size: 1em;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -70%);
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="calendar_container">
+        <div class="calendar">
+            <div class="calendar__month">E N E R O</div>
+            <table class="calendar__table">
+                <tr>
+                    <th class="calendar__day-name">L</th>
+                    <th class="calendar__day-name">M</th>
+                    <th class="calendar__day-name">M</th>
+                    <th class="calendar__day-name">J</th>
+                    <th class="calendar__day-name">V</th>
+                    <th class="calendar__day-name">S</th>
+                    <th class="calendar__day-name">D</th>
+                </tr>
+                <tr>
+                    <td class="calendar__day"></td>
+                    <td class="calendar__day"></td>
+                    <td class="calendar__day"></td>
+                    <td class="calendar__day">1</td>
+                    <td class="calendar__day">2</td>
+                    <td class="calendar__day">3</td>
+                    <td class="calendar__day">4</td>
+                </tr>
+                <tr>
+                    <td class="calendar__day">5</td>
+                    <td class="calendar__day">6</td>
+                    <td class="calendar__day">7</td>
+                    <td class="calendar__day">8</td>
+                    <td class="calendar__day">9</td>
+                    <td class="calendar__day">10</td>
+                    <td class="calendar__day">11</td>
+                </tr>
+                <tr>
+                    <td class="calendar__day">12</td>
+                    <td class="calendar__day">13</td>
+                    <td class="calendar__day">14</td>
+                    <td class="calendar__day">15</td>
+                    <td class="calendar__day">16</td>
+                    <td class="calendar__day calendar__day--heart calendar__day--active"">17</td>
+                <td class=" calendar__day">18</td>
+                </tr>
+                <tr>
+                    <td class="calendar__day">19</td>
+                    <td class="calendar__day">20</td>
+                    <td class="calendar__day">21</td>
+                    <td class="calendar__day">22</td>
+                    <td class="calendar__day">23</td>
+                    <td class="calendar__day">24</td>
+                    <td class="calendar__day">25</td>
+                </tr>
+                <tr>
+                    <td class="calendar__day">26</td>
+                    <td class="calendar__day">27</td>
+                    <td class="calendar__day">28</td>
+                    <td class="calendar__day">39</td>
+                    <td class="calendar__day">30</td>
+                    <td class="calendar__day">31</td>
+                    <td class="calendar__day"></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</body>
+
+</html>

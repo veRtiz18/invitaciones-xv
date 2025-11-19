@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>Mis XV | Valeria Nava</title>
+    <link rel="stylesheet" href="css/marco.css">
+</head>
+
+<body>
+
+    <div id="loader">
+        <div class="spinner"></div>
+        <p>Cargando...</p>
+    </div>
+
+    <div class="headerImg">
+        <img class="headerImg__img" src="./img/EDIT/header.png" alt="">
+    </div>
+
+    <article class="wrapper">
+        <section class="nombreContenedor">
+            <h2 class="nombreContenedor__leyenda">Mis XV</h2>
+            <h1 class="nombreContenedor__nombre">Valeria</h1>
+            <h2 class="nombreContenedor__apellidos">Nava García</h2>
+        </section>
+
+        <section class="reproductorContenedor">
+            <div class="reproductorContenedor__texto">
+                Presiona el <img src="./img/EDIT/hearth.png" class="reproductorContenedor__texto--img"> para
+                reproducir la canción.
+            </div>
+
+            <div class="player-bar">
+                <div id="barraProgreso" class="progress"></div>
+                <div id="handleProgress" class="handle"></div>
+            </div>
+
+            <div class="reproductorContenedor__botonera">
+                <button class="btn_music--false">
+                    <img src="./img/EDIT/btn_izq.png" alt="">
+                </button>
+
+                <button class="btn_music" onclick="toggleMusic(); irATexto();">
+                    <img class="btn_music--img" src="./img/EDIT/hearth.png" alt="Botón de corazón">
+                </button>
+
+                <button class="btn_music--false">
+                    <img src="./img/EDIT/btn_der.png" alt="">
+                </button>
+            </div>
+        </section>
+    </article>
+
+    <div class="footerImg">
+        <img class="footerImg__img" src="./img/EDIT/complete.png" alt="">
+    </div>
+
+    <article id="seccionTexto">
+        <section class="imagenPrincipal">
+            <img src="./img/EDIT/principal.png" alt="">
+        </section>
+    </article>
+
+    <article class="texto-introduccion">
+        <img class="texto-introduccion-img" src="./img/EDIT/linea-texto-principal.png" alt="">
+        <p>
+            Con la bendición de Dios y el amor que
+            mi familia me ha dado, me siento feliz
+            de llegar a este momento de mi vida.
+        </p>
+        <br>
+        <p>
+            El día que dejaré atrás mi infancia y
+            comenzaré un nuevo viaje y es mi
+            deseo que compartan conmigo la
+            alegría de mis quince años.
+        </p>
+        <img class="texto-introduccion-imgReverse" src="./img/EDIT/linea-texto-principal-reverse.png" alt="">
+    </article>
+
+
+    <div class="mes-header">
+        <img class="mes-header-guirnalda" src="./img/EDIT/guirnalda_mes.png" alt="">
+        <p class="mes-header-text">Enero</p>
+
+    </div>
+    <section class="fechaContainer">
+
+        <div class="fechaContainer__dia">
+            <img src="./img/guirnalda.webp" class="fechaContainer__img" alt="">
+            <p class="fechaContainer__text">
+                Sábado
+            </p>
+            <img src="./img/guirnalda.webp" class="fechaContainer__img" alt="">
+        </div>
+        <div class="fechaContainer__mes">
+            <p class="fechaContainer__text--numero">31</p>
+        </div>
+
+        <div class="fechaContainer__anio">
+            <img src="./img/guirnalda.webp" class="fechaContainer__img" alt="">
+            <p class="fechaContainer__text">2026</p>
+            <img src="./img/guirnalda.webp" class="fechaContainer__img" alt="">
+        </div>
+    </section>
+
+
+    <section class="introduccion_container">
+        <img class="introduccion_container--imagen" src="./img/EDIT/carruaje.png" alt="carruaje">
+        <p class="introduccion_container--texto">
+            HACE QUINCE AÑOS, MIS PADRES
+            ESTABAN FELICES POR MI LLEGADA,
+            AHORA, YO DOY GRACIAS A ELLOS, POR
+            SIEMPRE ESTAR CONMIGO CUIDÁNDOME Y
+            ACONSEJÁNDOME.
+            <br>ELLOS SON:
+        </p>
+
+        <div class="wrapper-papas">
+            <h2 class="introduccion_container--papas">Sr. Jóse Nava Galicia</h2>
+            <div class="introduccion_container--wrapper">
+                <p class="introduccion_container--ampersand">&</p>
+                <img class="introduccion_container--adorno" src="./img/EDIT/rosa.png" alt="rosa vino">
+            </div>
+            <h2 class="introduccion_container--papas">Sra. Adriana García Vertiz</h2>
+        </div>
+    </section>
+
+    <h1 class="calendar__text">El gran día:</h1>
+    <section class="calendar_container">
+        <div class="calendar">
+            <div class="calendar__month">E n e r o</div>
+            <table class="calendar__table">
+                <tr class="calendar__week">
+                    <th class="calendar__day-name">L</th>
+                    <th class="calendar__day-name">M</th>
+                    <th class="calendar__day-name">M</th>
+                    <th class="calendar__day-name">J</th>
+                    <th class="calendar__day-name">V</th>
+                    <th class="calendar__day-name">S</th>
+                    <th class="calendar__day-name">D</th>
+                </tr>
+                <tr>
+                    <td class="calendar__day"></td>
+                    <td class="calendar__day"></td>
+                    <td class="calendar__day"></td>
+                    <td class="calendar__day">1</td>
+                    <td class="calendar__day">2</td>
+                    <td class="calendar__day">3</td>
+                    <td class="calendar__day">4</td>
+                </tr>
+                <tr>
+                    <td class="calendar__day">5</td>
+                    <td class="calendar__day">6</td>
+                    <td class="calendar__day">7</td>
+                    <td class="calendar__day">8</td>
+                    <td class="calendar__day">9</td>
+                    <td class="calendar__day">10</td>
+                    <td class="calendar__day">11</td>
+                </tr>
+                <tr>
+                    <td class="calendar__day">12</td>
+                    <td class="calendar__day">13</td>
+                    <td class="calendar__day">14</td>
+                    <td class="calendar__day">15</td>
+                    <td class="calendar__day">16</td>
+                    <td class="calendar__day">17</td>
+                    <td class=" calendar__day">18</td>
+                </tr>
+                <tr>
+                    <td class="calendar__day">19</td>
+                    <td class="calendar__day">20</td>
+                    <td class="calendar__day">21</td>
+                    <td class="calendar__day">22</td>
+                    <td class="calendar__day">23</td>
+                    <td class="calendar__day">24</td>
+                    <td class="calendar__day">25</td>
+                </tr>
+                <tr>
+                    <td class="calendar__day">26</td>
+                    <td class="calendar__day">27</td>
+                    <td class="calendar__day">28</td>
+                    <td class="calendar__day">39</td>
+                    <td class="calendar__day">30</td>
+                    <td class="calendar__day  calendar__day--heart calendar__day--active">31</td>
+                    <td class="calendar__day"></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <div>
+        <p class="contador_parrafo">Faltan:</p>
+    </div>
+    <section class="contador">
+        <div class="contador_wrapper">
+            <div class="contador_item">
+                <p id="contador_dias" class="contador_num">00</p>
+                <p class="contador_label">Días</p>
+            </div>
+
+            <span class="contador_sep">:</span>
+
+            <div class="contador_item">
+                <p id="contador_horas" class="contador_num">00</p>
+                <p class="contador_label">Horas</p>
+            </div>
+
+            <span class="contador_sep">:</span>
+
+            <div class="contador_item">
+                <p id="contador_minutos" class="contador_num">00</p>
+                <p class="contador_label">Minutos</p>
+            </div>
+
+            <span class="contador_sep">:</span>
+
+            <div class="contador_item">
+                <p id="contador_segundos" class="contador_num">00</p>
+                <p class="contador_label">Segundos</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="dress_code">
+        <p class="dress_code-texto">Código de vestimenta</p>
+        <img class="texto-introduccion-img" src="./img/EDIT/linea-texto-principal.png" alt="">
+        <p class="dress_code-subtexto">F o r m a l</p>
+        <img class="texto-introduccion-imgReverse" src="./img/EDIT/linea-texto-principal-reverse.png" alt="">
+        <img class="dress_code-img" src="./img/EDIT/codigo_vestimenta.png" alt="">
+
+        <p class="dress_code-subtextoInd">Reservar el color <span>Vino</span> para la quinceañera.</p>
+    </section>
+
+    <section class="sobre_container">
+        <div class="sobre_container--wrapper">
+            <img class="sobre_container--img" src="./img/EDIT/mariposa_dorada.png" alt="">
+            <h1 class="sobre_container--titulo">Lluvia de sobres</h1>
+        </div>
+        <img class="sobre_container--sobre" src="./img/EDIT/sobre.png" alt="Sobre">
+        <p>Tu presencia es mi mejor regalo, pero si deseas
+            tener un detalle, agradecería que sea en un
+            sobre con amor y cariño.
+        </p>
+    </section>
+
+    <section class="ubication_container">
+        <p class="ubication__title">Recepción</p>
+        <img src="./img/EDIT/ubicacion.png" class="ubication_img" alt="Ubicaciónn">
+
+        <div class="ubication_indications">
+
+            <p class="ubication__salon">Salón de Eventos 
+                <br><span>Santa Lucía</span></p>
+            <p class="ubication_direction">Hora:</p>
+            <p class="ubication__hour"> 05 : 30 Hrs.</p>
+            <p class="ubication__direction">Dirección:</p>
+            <p class="ubication__description">Barrio Morelos, San Andrés Timilpan, Edo. de Méx.</p>
+            <a class="ubication__btn"
+                href="https://www.google.com/maps/place/Santa+Luc%C3%ADa/@19.8777535,-99.7078731,19.73z/data=!4m15!1m8!3m7!1s0x85d24f005206b5dd:0x37d65c891bc543c4!2sSanta+Luc%C3%ADa!8m2!3d19.877696!4d-99.7074639!10e5!16s%2Fg%2F11x1whrv3b!3m5!1s0x85d24f005206b5dd:0x37d65c891bc543c4!8m2!3d19.877696!4d-99.7074639!16s%2Fg%2F11x1whrv3b?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D">
+                Ver ubicación
+            </a>
+        </div>
+
+    </section>
+
+
+    <section class="whatsappCointainer"">
+        <div class=" wrapper-invitacions">
+        <section class="nombreContenedor2">
+            <h2 class="nombreContenedor__leyenda">Mis XV</h2>
+            <h1 class="nombreContenedor__nombre">Valeria</h1>
+            <h2 class="nombreContenedor__apellidos">Nava García</h2>
+        </section>
+        </div>
+
+
+        <div class="wrapper-confirmacion">
+
+            <img src="./img/EDIT/guirnalda-whats.png" class="whats-img" alt="">
+            <p class="texto-invitacion" id="texto-invitacion">
+                ¡Tu presencia hará nuestro día mágico!<br>
+                ¿Nos puedes confirmar si vendrás?<br>
+            </p>
+
+            <div class="btn-wrapper">
+                <button class="btn-confirm" id="btn-si">Sí, asistiré</button>
+                <button class="btn-confirm" id="btn-no">No podré ir</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <audio id="miAudio" src="./utils/cancion_instrumental.mp3"></audio>
+    <script src="./scripts/funciones.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,251 @@
+/* Fuente Alex Brush */
+@font-face {
+    font-family: 'AlexBrush';
+    src: url('../fonts/AlexBrush-Regular.woff2') format('woff2'),
+        url('../fonts/AlexBrush-Regular.woff') format('woff'),
+        url('../fonts/AlexBrush-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Fuente Great Vibes */
+@font-face {
+    font-family: 'GreatVibes';
+    src: url('../fonts/GreatVibes-Regular.woff2') format('woff2'),
+        url('../fonts/GreatVibes-Regular.woff') format('woff'),
+        url('../fonts/GreatVibes-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SpiraxRegular';
+    src: url('../fonts/Spirax-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Reset básico y configuración inicial */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /* Hace que width/height incluyan padding y border */
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    /* background: red; */
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    /* background-color: #fff; */
+    color: #222;
+
+}
+
+/* Ejemplo de uso */
+h1,
+h2 {
+    font-family: 'AlexBrush', cursive;
+
+    /* background: linear-gradient(90deg, #ff6b6b, #f8e71c, #6bffb8, #6b6bff); */
+    background: linear-gradient(90deg,
+            #42070f, #772020, #c94f57, #ffc050, #4e1119);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* animation: gradientMove 8s ease infinite; */
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.wrapperPrincipal {
+    border: 5px solid #23d160;
+    flex-wrap: wrap;
+}
+
+h2 {
+    font-family: 'GreatVibes', cursive;
+    color: #9d0707;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    /* fallback seguro */
+}
+
+body {
+    background: url('../img/EDIT/fondo2.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+    
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+
+}
+
+.nombreContenedor {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nombreContenedor__leyenda {
+    font-size: 40px;
+    margin-bottom: -20px;
+    margin-top: 20px;
+    width: 400px;
+    text-align: center;
+}
+
+.nombreContenedor__nombre {
+    font-size: 180px;
+    width: 600px;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.nombreContenedor__apellidos {
+    font-size: 60px;
+    text-align: center;
+    width: 600px;
+    margin-top: -90px;
+}
+
+.botoneraContenedor {
+    /* background: blue; */
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button {
+    background-color: transparent;
+    /* Hace el fondo transparente */
+    border: none;
+    /* Elimina el borde */
+}
+
+.boton {
+    width: 100px;
+}
+
+.wrapperBotonera__texto {
+
+    text-align: center;
+    margin-top: -20px;
+}
+
+
+
+.fechaContainer {
+    display: flex;
+    /* Esto activa el flexbox */
+    flex-direction: row;
+    /* horizontal */
+    justify-content: center;
+    /* centra los items horizontalmente */
+    align-items: center;
+    /* opcional: centra verticalmente */
+    padding: 30px;
+    /* background: red; */
+}
+
+.fechaContainer__dia {
+    display: flex;
+    flex-direction: column;
+    /* background: blue; */
+    padding: 10px;
+}
+
+.fechaContainer__dia p,
+.fechaContainer__anio p {
+    font-size: 40px;
+    font-family: 'SpiraxRegular', cursive, sans-serif;
+
+    background: linear-gradient(180deg,
+            #7b1f2b 0%,
+            #7b1f2b 20%,
+            #f8d26a 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fechaContainer__text--mes {
+    font-size: 25px;
+    font-family: 'SpiraxRegular', cursive, sans-serif;
+
+    background: linear-gradient(180deg,
+            #7b1f2b 0%,
+            #7b1f2b 90%,
+            #f8d26a 10%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fechaContainer__text--numero {
+    font-family: 'SpiraxRegular', cursive, sans-serif;
+
+    font-size: 60px;
+
+    background: linear-gradient(180deg,
+            #7b1f2b 0%,
+            #7b1f2b 20%,
+            #f8d26a 90%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+.fechaContainer__mes {
+    /* background: greenyellow; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+
+.fechaContainer__anio {
+    /* background: orchid; */
+    padding: 10px;
+}
+
+.fechaContainer__img {
+    width: 250px;
+    /* height: 100px; */
+}
+
+.fechaContainer__text {
+    font-size: 40px;
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}

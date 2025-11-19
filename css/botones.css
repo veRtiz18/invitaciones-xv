@@ -1,0 +1,96 @@
+.player {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    background-color: #7b1f2b;
+    /* color vino para tu invitación */
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #a32a3a;
+}
+
+/* PLAY TRIANGLE */
+.btn.play::before {
+    content: '';
+    position: absolute;
+    left: 18px;
+    top: 12px;
+    border-style: solid;
+    border-width: 13px 0 13px 22px;
+    border-color: transparent transparent transparent white;
+}
+
+/* PAUSE BARS */
+.btn.pause::before,
+.btn.pause::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 26px;
+    background: white;
+    top: 12px;
+}
+
+.btn.pause::before {
+    left: 14px;
+}
+
+.btn.pause::after {
+    right: 14px;
+}
+
+
+
+/* PREV TRIANGLES */
+.btn.prev::before,
+.btn.prev::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.btn.prev::before {
+    left: 18px;
+    border-width: 13px 15px 13px 0;
+    border-color: transparent white transparent transparent;
+}
+/* NEXT TRIANGLES */
+.btn.next::before,
+.btn.next::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.btn.next::before {
+    left: 22px;
+    border-width: 13px 0 13px 15px;
+    border-color: transparent transparent transparent white;
+}
+
+/* .btn.next::after {
+    left: 14px;
+    width: 6px;
+    height: 26px;
+    background: white;
+} */
