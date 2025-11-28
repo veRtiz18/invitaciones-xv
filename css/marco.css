@@ -315,19 +315,19 @@ body {
     margin-top: -120px;
 }
 
-    .imagenPrincipal {
-        
-        
-        margin-bottom: 30px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        
-        margin-top: 2em;
-        
-        
-    }
+.imagenPrincipal {
+
+
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2em;
+
+
+}
 
 .imagenPrincipal img {
     width: 50em;
@@ -908,7 +908,7 @@ body {
 }
 
 .whats-img {
-    margin-top: -10em;
+    margin-top: -13em;
     margin-bottom: -15em;
     width: 23em;
 }
@@ -970,6 +970,158 @@ body {
 .btn-confirm:active {
     transform: scale(0.96);
 }
+
+.cantidad-wrapper {
+    margin-top: 20px;
+    text-align: center;
+    animation: fadeIn 0.4s ease;
+}
+
+.texto-cantidad {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+
+    background: linear-gradient(90deg,
+            #c18a00,
+            #ffdf5b,
+            #fff2a1,
+            #ffce2e,
+            #b47a00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.input-cantidad {
+    padding: 12px;
+    width: 180px;
+    border: 2px solid #b47a00;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffdf5b;
+    text-align: center;
+    outline: none;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+.input-cantidad::placeholder {
+    color: #ffe9a6;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.form-asistencia {
+    margin-top: 25px;
+    text-align: center;
+    animation: fadeIn 0.4s ease;
+}
+
+/* TITULITOS */
+.form-asistencia .texto-invitacion {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+
+    background: linear-gradient(90deg,
+            #c18a00,
+            #ffdf5b,
+            #fff2a1,
+            #ffce2e,
+            #b47a00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* LISTA DE NOMBRES */
+.lista-nombres {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+    
+}
+
+.lista-nombres label {
+    font-size: 1.4rem;
+    color: #ffdf5b;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+    padding: 10px 12px;
+    border: 2px solid #b47a00;
+    border-radius: 10px;
+    width: 100%;
+
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+    transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.lista-nombres label:hover {
+    background: rgba(255, 207, 46, 0.2);
+    transform: translateY(-2px);
+}
+
+/* CHECKBOX */
+.lista-nombres input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #e6b800;
+}
+
+/* TEXTAREA DE DEDICATORIA */
+.textarea-dedicatoria {
+    width: 90%;
+    max-width: 400px;
+    padding: 12px;
+    border: 2px solid #b47a00;
+    border-radius: 12px;
+    font-size: 1rem;
+    color: #ffdf5b;
+
+    background: rgba(255, 255, 255, 0.1);
+    outline: none;
+    resize: none;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+.textarea-dedicatoria::placeholder {
+    color: #ffe9a6;
+}
+
+/* ANIMACIÓN */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 
 @media (max-width: 768px) {

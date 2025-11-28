@@ -283,21 +283,30 @@
         <div class="wrapper-confirmacion">
 
             <img src="./img/EDIT/guirnalda-whats.png" class="whats-img" alt="">
+            <p id="titulo-familia" class="texto-invitacion" style="font-size: 30px;"></p>
+
             <p class="texto-invitacion" id="texto-invitacion">
-                ¡Tu presencia hará nuestro día mágico!<br>
-                ¡Confirma tu asistencia!<br>
+                ¡Su presencia hará nuestro día mágico!<br>
+                ¡Confirmen su asistencia!<br>
             </p>
 
             <div class="btn-wrapper">
-                <button class="btn-confirm" id="btn-si">Sí, asistiré</button>
-                <button class="btn-confirm" id="btn-no">No podré ir</button>
+                <button class="btn-confirm" id="btn-si">Sí, asistiremos</button>
+                <button class="btn-confirm" id="btn-no">No podremos ir</button>
             </div>
 
 
-            <div class="cantidad-wrapper" id="cantidad-wrapper" style="display: none;">
-                <p class="texto-cantidad">¿Cuántas personas asistirán contigo?</p>
-                <input type="number" id="input-cantidad" min="1" placeholder="Ej: 2" class="input-cantidad">
-                <button class="btn-confirm" id="btn-enviar">
+
+            <div class="form-asistencia" id="form-asistencia" style="display:none; margin-top:20px;">
+                <p class="texto-invitacion" style="font-size: 26px;">Selecciona quién asistirá:</p>
+
+                <div id="lista-nombres" class="lista-nombres"></div>
+
+                <p class="texto-invitacion" style="margin-top:15px;">Dedíca unas bonitas palabras a Valeria:</p>
+                <textarea id="mensaje-valeria" class="textarea-dedicatoria" placeholder="Escribe aquí tu mensaje..."
+                    rows="4"></textarea>
+
+                <button class="btn-confirm" id="btn-enviar-confirmacion" style="margin-top:15px;">
                     Enviar confirmación
                 </button>
             </div>
@@ -305,11 +314,12 @@
     </section>
 
 
+    <div style="margin-top: 30px;"><br><br></div>
 
 
 
     <audio id="miAudio" src="./utils/cancion_instrumental.mp3"></audio>
-    <script src="./scripts/funciones.js"></script>
+    <script src="./scripts/funciones_dinamico.js"></script>
 </body>
 
 
