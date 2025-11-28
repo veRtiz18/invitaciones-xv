@@ -231,6 +231,16 @@ const familias = {
             "Cruz Omar Salazar Vertiz ",
             "Brenda Sofia Salazar Martínez",
             "Jose Cruz Salazar Reyes",
+
+        ]
+    },
+      11: {
+        nombre: "Familia Ricardo Vertiz",
+        invitados: [
+            "Yolanda Vertiz Santiago",
+            "Mariel Ricardo Vertiz",
+            "Carlos Ricardo Vertiz",
+            "Juan Ricardo De La Cruz",
             
         ]
     }
