@@ -217,6 +217,13 @@ const familias = {
             "Agustina Vertiz Santiago",
             "Jóse Salazar González",
         ]
+    },
+    9: {
+        nombre: "",
+        invitados: [
+            "Araceli Lamadrid Vertiz",
+            "Gerardo López López",
+        ]
     }
     // Puedes agregar más familias:
     // 2: { nombre: "Familia Rodríguez López", invitados: [...] }
